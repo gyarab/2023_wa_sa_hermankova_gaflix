@@ -1,11 +1,10 @@
-{% extends base.html %}
+{% extends 'filmy/base.html' %}
 
-{% block 'title '%}Uvodni stranka{% endblock %}
+{% block 'title' %}Prvni | {{ block.super }}{% endblock %}
 
-{% block 'main_content' %}
-
-<h1>Hello world</h1>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis natus nihil suscipit nesciunt, sequi officiis porro adipisci esse dignissimos quis voluptate, quam vel laborum excepturi quod? Ipsa pariatur aliquid eos!</p>
-
-
+{% block 'content' %}
+    <h1>Prvni template</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloribus laborum incidunt perferendis provident quidem architecto impedit ab, minima voluptas voluptatem neque cumque suscipit asperiores obcaecati exercitationem quibusdam. Rem, laboriosam?
+    </p>
 {% endblock %}
